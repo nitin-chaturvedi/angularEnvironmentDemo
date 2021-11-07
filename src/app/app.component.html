@@ -1,0 +1,23 @@
+
+    <span>{{ title }} app is running!</span>
+
+
+    <h1>
+      Environment
+    </h1>
+    <pre>{{env | json}}</pre>
+    
+    <br>
+    <div>
+      Use 'ng serve --configuration=envName' with different values for envName you have defined to see different params.
+    </div>
+<br>
+<br>
+    <div>
+      For adding new environment in angular.json update
+
+      <ul>
+        <li>build element configurations section with file replacement and other needed params. This will be used during build ng build --configuration=envName.</li>
+        <li>serve element configuration section with file replacement and other needed params. This will be used during ng serve --configuration=envName </li>
+      </ul>
+    </div>
